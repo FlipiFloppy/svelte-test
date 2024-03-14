@@ -18,7 +18,7 @@
                     sapiente soluta.
                 </h2>
                 <div style='color:black' class='scroll-button animate-scroll'>
-                    <a href='/about'>Click here</a>
+                    <a href='/blog'>Click here</a>
                     <div class='arrow'></div>
                     </div>
             </div>
