@@ -1,22 +1,52 @@
 <nav>
-    <div calss="nav-container">
-        <a href="/" class="nav-logo" title="Back to Homepage">Илья Максимов</a>
-        <div calss="nav-links">
-            <a href="/about" calss="link">Обо мне</a>
-            <a href="/blog" calss="link">Блог</a>
-            <a href="/projects" calss="link">Портфолио</a>
-            <a href="/contact" calss="link">Контакты</a>
+    <div class="nav-container">
+        <a href="/" class="nav-logo" title="Back to Homepage">Павел Красин</a>
+        <div class="nav-links">
+            {#each nav as link} 
+            <a href={link.href} class="link">{link.title}</a>
+            {/each}
         </div>
     </div>
 </nav>
 
 <div class="container">
-    <!-- Pages will be injected below -->
+    <!--Pages will be injected below-->
     <slot></slot>
-    </div>
-    <style>
+</div>
+
+<script>
+    const nav = [
+        {
+         title: "Обо мне",
+         href: "/about",
+         isShow: true,
+        },
+        {
+         title: "Блог",
+         href: "/blog",
+         isShow: true,
+        },
+        {
+         title: "Проект",
+         href: "/project",
+         isShow: true,
+        },
+        {
+         title: "Контакты",
+         href: "/contacts",
+         isShow: true,
+        },
+        {
+         title: "temp",
+         href: "/temp",
+         isShow: false,
+        },
+    ];
+</script>
+
+<style>
     .container {
-    max-width: 1400px;
-    margin: 50px auto;
+        max-width: 1400px;
+        margin: 50px auto;
     }
-    </style>
+</style>
