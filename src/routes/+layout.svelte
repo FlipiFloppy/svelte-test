@@ -1,9 +1,12 @@
 <nav>
     <div class="nav-container">
-        <a href="/" class="nav-logo" title="Back to Homepage">Павел Красин</a>
-        <div class="nav-links">
-            {#each nav as link} 
-            <a href={link.href} class="link">{link.title}</a>
+        <a href="/" class="nav-logo" title="Back to Homepage">Максимов Илья</a>
+        <div class="nav-link">
+            {#each nav as link}
+                {#if link.isShow}
+                    <a href={link.href} class="link">{link.title}</a>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                {/if}
             {/each}
         </div>
     </div>
@@ -15,7 +18,7 @@
 </div>
 
 <script>
-    const nav = [
+    let nav = [
         {
          title: "Обо мне",
          href: "/about",
@@ -36,13 +39,17 @@
          href: "/contacts",
          isShow: true,
         },
-       
+        {
+         title: "temp",
+         href: "/temp",
+         isShow: false,
+        },
     ];
 </script>
 
 <style>
     .container {
         max-width: 1400px;
-        margin: 50px auto;
+        margin: 60px auto;
     }
 </style>
