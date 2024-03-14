@@ -1,11 +1,13 @@
 <nav>
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Максимов Илья</a>
-        <div class="nav-links">
-            <!-- svelte-ignore missing-declaration -->
-            {#if link.isShow}
-            <a href={link.href} class="link">{link.title}</a>
-            {/if}
+        <div class="nav-link">
+            {#each nav as link}
+                {#if link.isShow}
+                    <a href={link.href} class="link">{link.title}</a>
+                    <span>&nbsp;&nbsp;&nbsp;</span>
+                {/if}
+            {/each}
         </div>
     </div>
 </nav>
@@ -16,7 +18,7 @@
 </div>
 
 <script>
-    const nav = [
+    let nav = [
         {
          title: "Обо мне",
          href: "/about",
@@ -48,6 +50,6 @@
 <style>
     .container {
         max-width: 1400px;
-        margin: 50px auto;
+        margin: 60px auto;
     }
 </style>
