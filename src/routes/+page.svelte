@@ -67,7 +67,7 @@
     }
     
     .background-div {
-        background-color: rgb(4, 160, 233);
+        background-color: rgb(219, 8, 184);
         width: 100%;
         height: 56vh;
         margin: -160px auto;
