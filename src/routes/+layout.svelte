@@ -2,6 +2,7 @@
     <div class="nav-container">
         <a href="/" class="nav-logo" title="Back to Homepage">Максимов Илья</a>
         <div class="nav-links">
+            <!-- svelte-ignore missing-declaration -->
             {#if link.isShow}
             <a href={link.href} class="link">{link.title}</a>
             {/if}
