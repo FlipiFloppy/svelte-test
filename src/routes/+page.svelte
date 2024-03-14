@@ -17,6 +17,10 @@
                     aut, cupiditate dolores ducimus expedita labore nemo odio quibusdam quidem
                     sapiente soluta.
                 </h2>
+                <div style='color:black' class='scroll-button animate-scroll'>
+                    <a href='/about'>Click here</a>
+                    <div class='arrow'></div>
+                    </div>
             </div>
         </div>
     </div>
