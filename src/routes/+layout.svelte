@@ -17,7 +17,7 @@
 <script>
     const nav = [
         {
-         title: "Обомне",
+         title: "Обо мне",
          href: "/about",
          isShow: true,
         },
