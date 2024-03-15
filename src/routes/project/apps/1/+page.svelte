@@ -21,7 +21,7 @@
     </div>
 </main>
 <script>
-    import Icon from "../../../../components/Icon.svelte;"
+    import Icon from "../icon.svelte";
     let newItem ='';
     let todoList=[];
     function add(){
@@ -64,9 +64,6 @@
         margin-bottom: 1rem;
     }
 
-    .todo.completed.todo\_\_text{
-        text-decoration: line-through;
-    }
 
     input{
         flex-grow: 1;
@@ -135,6 +132,10 @@
 
     .todo.completed {
     color: slategray;
+    }
+
+    .todo.completed.todo\_\_text {
+    text-decoration: line-through;
     }
 
     .todo.completed button {
