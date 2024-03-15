@@ -1,5 +1,4 @@
 <svelte:head>
-
 <title>Блог</title>
 </svelte:head>
 <div class="container">

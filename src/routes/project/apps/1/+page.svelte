@@ -21,7 +21,7 @@
     </div>
 </main>
 <script>
-    import Icon from "../icon.svelte";
+    import Icon from '../../../../components/Icon.svelte';
     let newItem ='';
     let todoList=[];
     function add(){
@@ -134,7 +134,7 @@
     color: slategray;
     }
 
-    .todo.completed.todo\_\_text {
+    .todo.completed.todo__text {
     text-decoration: line-through;
     }
 

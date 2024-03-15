@@ -1,5 +1,5 @@
 <svelte:head>
-<title>Максимов Илья</title>
+    <title>Шаров Пётр</title>
 </svelte:head>
 
 <div class="container">
@@ -13,14 +13,8 @@
                     </h1>
                 </div>
                 <h2 class="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto
-                    aut, cupiditate dolores ducimus expedita labore nemo odio quibusdam quidem
-                    sapiente soluta.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aut,cupiditate doloresducimus expedita labore nemo odio quibusdam quidem sapiente soluta.
                 </h2>
-                <div style='color:black' class='scroll-button animate-scroll'>
-                    <a href='/blog'>Click here</a>
-                    <div class='arrow'></div>
-                    </div>
             </div>
         </div>
     </div>
@@ -71,7 +65,7 @@
     }
     
     .background-div {
-        background-color: rgb(219, 8, 184);
+        background-color: rgb(202, 202, 202);
         width: 100%;
         height: 56vh;
         margin: -160px auto;

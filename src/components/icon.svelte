@@ -3,7 +3,6 @@
     const icons = [
         {
             name: "check-mark",
-            
         },
         {
             name: "delete",
